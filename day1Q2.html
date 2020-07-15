@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR  LET CONST</title>
+</head>
+<body>
+    <script>
+    // var is global //
+    /* var can be redeclared and can be updated any where in the program */
+    var name ="tej"
+    var name = "aswini"
+    console.log(name)
+    //let is local/
+    /* let can be updated but not redeclared */
+    let marks =99
+    //let marks =100//
+    console.log(marks)
+    /* to make the let variable global it must be specified in braces */
+    {
+        let marks =100
+        console.log(marks)
+    }
+    // const is used to make constant value to a variable//
+    /* while we are creating new const variable its value should be intialized */
+    const age =18
+    console.log(age)
+    /* where as we can create with intialisation using "var"*/
+    var a
+    console.log(a)
+    /* we can't re assign the value of const */
+    const flower = ["rose","lotus","sun flower"]
+    console.log(flower)
+    </script>  
+</body>
+</html>
