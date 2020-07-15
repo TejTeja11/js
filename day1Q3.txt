@@ -1,0 +1,24 @@
+         DATA TYPES
+1,NUBER :
+numerical values  
+var width = window.innerWidth;
+var pi =3.14
+
+2,STRING
+collection of characters
+var location = window.location;
+var name  ="andhra"
+
+3,BOOLEAN
+either true or false
+var status =false'
+var windowStatus=window.closed
+
+4,OBJECT
+node in DOM
+var topic = document.getElementById("my ID")
+
+
+5,ARRAY
+return morethan one value
+var links =document.getElementByTagName('a')
