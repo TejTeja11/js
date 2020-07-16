@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY-2 QUESTION-2</title>
+    <h1>string and array methods</h1>
+</head>
+<body>
+    <script>
+        //string methods
+        let s1="earth revolves"
+        console.log(s1.length)
+        let s2 = s1.split(' ').join('')
+        let s3 = "around"
+        console.log(s1.length)
+        console.log(s1.charAt(2))
+        console.log(s1.charCodeAt(2))
+        console.log(s1,s3.concat())
+        console.log(s1.includes("earth"))
+        console.log(s1.indexOf('e'))
+        console.log(s1.lastIndexOf('e'))
+        s4 = "he is a singer and also a dancer"
+        console.log(s4.search("is"))
+        console.log(s4.split(' '))
+        console.log(s4.startsWith('he'))
+        console.log(s1.toLowerCase())
+        console.log(s4.toUpperCase())
+        console.log(s4.trim())
+        //array methods
+        let names = ["tej", "aswin", "vasu", "sumathi"];
+        console.log(names.pop())
+        console.log(names.push("ramesh"))
+        console.log(names.shift())
+        console.log(names.unshift("manohar"))
+        console.log(delete names[0])
+        console.log(names.splice(2, 0, "manohar", "ramesh"))
+        console.log(names.splice(0, 1))
+    </script>
+</body>
+</html>
