@@ -1,0 +1,150 @@
+<!doctype html><html><head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>DAY-4 QUESTION-4</title> 
+  <style>
+       .tableContain{
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         background-color: #474545;
+         padding: 10px;
+         }
+         .tableItem{
+         background-color: #424949 ;
+         border: 1px solid black;
+         padding: 20px;
+         font-size: 30px;
+         text-align: center;
+         }
+         div#mainTable input{
+            font-size: 30px;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            padding:0px;
+            color: light yellow;
+         }
+         .inputField{
+            font-size: 25px;
+            width: 98.8%;
+            height: 100%;
+            margin:0px;
+            text-align: right;
+            
+            color: black;
+         }
+         div#calc {
+            min-width:325px;
+            max-width: 650px;
+            margin:0 auto;
+         }
+         body{
+            background-color: lightblue;
+         }
+    </style> 
+ </head>
+ <body>
+  <div id="calc"> 
+   <h1>Calculator</h1> 
+   <div>
+    <input class="inputField" type="text" id="textField" disabled>
+   </div> 
+   <div class="tableContain" id="mainTable"> 
+    <div class="tableItem">
+     <input type="button" value="x" id="*" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="-" id="-" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="/" id="/" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="c" id="c" onclick="clearInput()">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="7" id="7" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="8" id="8" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="9" id="9" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="+" id="+" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="4" id="4" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="5" id="5" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="6" id="6" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="%" id="%" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="3" id="3" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="2" id="2" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="1" id="1" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="sqrt" id="squareRoot" onclick="squareRoot()">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="." id="." onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="0" id="0" onclick="clickInput(id)">
+    </div> 
+    <div class="tableItem">
+     <input type="button" value=" " disabled>
+    </div> 
+    <div class="tableItem">
+     <input type="button" value="=" id="equal" onclick="calculate()">
+    </div> 
+   </div> 
+  </div> 
+  <h1>Calculator</h1> 
+  <script>
+       function calculate(){     //sums The value
+
+    let rawData = document.getElementById("textField").value;
+    try{
+    let answer = eval(rawData);
+    document.getElementById("textField").value=answer;
+    }catch(error){
+       document.getElementById("textField").value="Invalid Expression";
+       console.log(error);
+    }
+
+ }
+
+ function clearInput(){ //clear the text field
+ 
+    document.getElementById("textField").value="";
+
+ }
+ function clickInput(nameID){ //for button when clicked
+
+    let a = document.getElementById(nameID).id;
+    document.getElementById("textField").value+=a;
+   
+ }
+
+ function squareRoot(){  // for square root
+
+    let sq = document.getElementById("textField").value;
+    sq *= sq;
+    document.getElementById("textField").value=sq;
+ }
+   </script> 
+ 
+</body></html>
