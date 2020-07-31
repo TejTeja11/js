@@ -1,0 +1,55 @@
+<!doctype html><html><head> 
+  <title>miniproject-randoquote</title> 
+  <meta meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+  <meta charset="UTF-8"> 
+  <style>
+    body{
+      background-color: Turquoise;
+    }
+    h1,p {
+      text-align: center;
+      font-family: Helvetica;
+      padding:30px 80px;
+
+    }
+    button {
+      text-align: center;
+      margin-left: 40%; 
+      height: 45px;
+      width: 200px;
+      font-weight: bold;
+    }
+    h1 {
+      background-color: Purple;
+      color:white;
+    }
+    button:hover{
+      background-color: Salmon;
+      color: MediumBlue;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <h1>Displaying your quote below</h1> 
+  <p></p> 
+  <button onclick="myfunction()" type="button">Try again</button> 
+  <script>
+    var quote_arr =["Procrastination is one of the most common and deadliest of diseases and it's toll on success and happiness is heavy","No matter how carefully you plan your goals they will never be more than pipe dreams unless you pursue them with gusto","Without goals,and plans to reach them, you are like a ship that has set sail with no destination","We first make our habits,and then our habits make us","Success,or failure,very often arrives on wings that seem mysterious to us","Your life need not be a succession of twenty-four vaccums, nor must you live in an emotional dungeon any layer","You possess a potent force that you either use, or misuse, hundreds of times every day","All that you accomplish or fail to accomplish with your life is the direct results pf your thoughts","It is the mind that maketh good or ill,that maketh wretch or happy ,rich or poor","Don't close the door of an opportunity","You may live in an imperfect world but the frontiers are not all closed and the doors are not all shut","Begin to now what you will be hereafter","Never ever give up","Beware of no one more than of yourself,we carry our worst enemies within us","In order to plan your future wisely,it is necessary that you understand and appreciate your past","Until you acquire five essential ingredients, success will never be success","Count your blessings but not your troubles!","There are seeds of self-destruction in all of us that will bear only unhappiness if allowed to grow"];
+    var para=document.querySelector("p");
+    /*let myfunction=()=>{
+        var quote=quote_arr[Math.floor(Math.random()*quote_arr.length)];
+        document.write(quote);
+      }
+    para.innerHTML=myfunction();*/
+    let myfunction=()=>{
+        var quote=quote_arr[Math.floor(Math.random()*quote_arr.length)];
+        para.innerHTML=quote;
+      }
+    myfunction();
+
+    //var btn=document.querySelector("button");
+    //btn.onclick=myfunction();
+
+  </script> 
+ 
+</body></html>
